@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:#080808;
+    color-scheme: white;
+    
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpeg);
+    background-size: cover;
+}
+.contaier{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.5);
+}
+.logo{
+    background-image: none;
+    width: 100px;
+    margin-left: 40px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+nav ul li a{
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-left: 30px;
+}
+#about{
+    padding: 80px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.abtclmn1{
+    flex-basis: 35%;
+}
+.abtclmn1 img{
+    width: 90%;
+    border-radius: 15px;
+}
+.abtclmn2{
+    flex-basis: 60%;
+}
+#tab{
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+#tab::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+#tab:hover::after{
+    width: 20%;
+}
+#size{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    font-weight: 120;
+    color: #fff;
+}
+#sub-title{
+    font-size: 60px;
+    font-weight: 300;
+}
+#portfolio{
+    padding: 50px 0;
+}
+#work{
+    width: 500px;
+    border-radius: 5px;
+}
+.work{
+    text-align: center;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.formbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+form {
+    background-color: black;
+    
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #262626;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+@media only screen and (max-width: 600px){
+
+}
+

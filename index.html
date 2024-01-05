@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin H Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="background image">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1><p>Hello, Myself <span style="color: green;">Nithin H</span> </p></h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="about">
+        <div class="cointainer">
+            <div class="row">
+                <div class="abtclmn1">
+                    <img src="background 2.jpeg">
+                </div>
+                <div class="abtclmn2">
+                    
+                   <div id="sub-title"> About Me</div>
+                   <p>Greetings, Myself Nithin H , I am doing Undergraduate course in RV-University in the school Of Computer Science And Engineering(SOCSE).</p>
+                   <ul>
+                   <li><p>I am good in sports, my favourite sport is badminton.</p></li>
+                   <li><p>I My Hobbies are Playing Sports and online games.</p></li>
+                    </ul>
+                   <br>
+                   <br>
+                   <p id="tab" style="font-size: 30px;"><strong> Skills:</strong></p>
+                   <div >
+                    <table border="2" cellspacing="5">
+                        <tr>
+                            <th><h5>Active Listening Skills :</h5></th>
+                            <th><h5>Computer skills :</h5></th>
+                            <th><h5>Leadership skills :</h5></th>
+                        </tr>
+                        <tr><td>- Related listening skills include:</td><td>- Typing/word processing</td><td>- Ability to teach and mentor</td></tr>
+                        <tr><td>- Asking questions</td><td>- Fluency in coding languages</td><td>- Flexibility</td></tr>
+                        <tr><td>- Note-taking</td><td>- Systems administration</td><td>- Risk-taking</td></tr>
+                        <tr><td>- Organisation</td><td>- Spreadsheets</td><td>- Team building</td></tr>
+                        <tr><td>- Punctuality</td><td>- Email management</td><td>- Time management</td></tr>
+                        <tr><td>- Verbal/Non-verbal communication</td><td>- C<br>- Python<br>- Java<br><td>- Secret</td></tr>
+                      </table>
+                      <br>
+                      <p id="tab" style="font-size: 30px;"><strong> Education:</strong></p>
+                      <table border="1">
+                        <tr>
+                            <th>Education</th><th>Institution</th><th>Graduation</th>
+                        </tr>
+                        <tr>
+                            <td>10th</td><td>EMBASSY PUBLIC SCHOOL</td><td>2021</td>
+                        </tr>
+                        <tr>
+                            <td>12th</td><td>CHAITANYA PU COLLEGE</td><td>2023</td>
+                        </tr>
+                        <tr>
+                            <td>BTech</td><td>RV UNIVERSITY</td><td>2027</td>
+                        </tr>
+                    </table>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" id="mywork">My Work</h1><br>
+            <div class="work-list">
+                <div class="work">
+                    <div class="layer">
+                    <img src="petadoption.png" id="work">
+                    <img src="petadoption 2.png" id="work">
+                <h3> Pet Adoption Webpage</h3>
+                <p>Developed a pet adoption webpage for pet lovers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h3 id="contactme">Contact Me</h3>
+    <formbody class="formbody">
+    <form id="myForm">
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span><br>
+
+        <label for="Querry">Querry</label>
+        <textarea nme="Querry" id="Querry" rows="6"></textarea>
+
+        <input type="submit" value="Submit">
+
+        <script>
+            const form = document.getElementById('myForm');
+    
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                validateForm();
+            });
+    
+            function validateForm() {
+                const name = document.getElementById('name');
+                const email = document.getElementById('email');
+    
+                const nameError = document.getElementById('nameError');
+                const emailError = document.getElementById('emailError');
+    
+                nameError.textContent = '';
+                emailError.textContent = '';
+                if (name.value.trim() === '') {
+                    nameError.textContent = 'Username is required';
+                }
+    
+                const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (!emailRegex.test(email.value.trim())) {
+                    emailError.textContent = 'Email is not valid';
+                }
+    
+            }
+        </script>
+    </formbody>
+    
+    
+</body>
+</html>
